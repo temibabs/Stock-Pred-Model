@@ -12,7 +12,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(desc)
     parser.add_argument('--stock', type=str, default='AAPL', help='The stock to train/test for')
     parser.add_argument('--mode', type=str, default='train', help='Whether to train or test')
-    parser.add_argument('--proxy', type=str, default='http://trendgate.interswitchng.com:8080',
+    parser.add_argument('--proxy', type=str, default=‘’,
                         help='Proxy Setting (for connection to the dataset)')
 
     arguments = parser.parse_args()
